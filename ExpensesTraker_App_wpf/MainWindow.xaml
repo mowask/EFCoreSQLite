@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExpensesTraker_App_wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="400">
     <Grid>
+        <TabControl>
+            <TabItem Header="Categories">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>                        
+                    </Grid.RowDefinitions>
 
+                    <StackPanel>
+                        
+                    </StackPanel>
+
+                    <DataGrid x:Name="dataGridCategories"
+                              AutoGenerateColumns="False"
+                              Grid.Row="1">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Id}"
+                                                Header="Id"
+                                                IsReadOnly="True"/>
+                            <DataGridTextColumn Binding="{Binding Name}"
+                                                Header="Name"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
