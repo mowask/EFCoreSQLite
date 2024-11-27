@@ -1,11 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
-
-
-
-
-
-
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Hello");
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine("Hello world");
+        }
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine("Hello world");
+        }
 
