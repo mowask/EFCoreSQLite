@@ -1,11 +1,11 @@
-﻿using _11_25_SQLite.Contexts;
+﻿using ExpensesTraker_Library.Contexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11_25_SQLite.Repositories
+namespace ExpensesTraker_Library.Repositories
 {
     public class ExpenseRepository
     {

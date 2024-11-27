@@ -1,42 +1,12 @@
-<<<<<<< HEAD
-﻿internal class Program
-{
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Hello");
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine("Hello world");
-        }
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine("Hello world");
-        }
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine("Hello world");
-        }
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine("Hello world");
-        }
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine("Hello world");
-        }
-
-    }
-}
-=======
-﻿using _11_25_SQLite.Contexts;
-using _11_25_SQLite.Madels;
+﻿using ExpensesTraker_Library.Contexts;
+using ExpensesTraker_Library.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11_25_SQLite
+namespace ExpensesTraker_Library
 {
     internal class Program
     {
@@ -49,15 +19,15 @@ namespace _11_25_SQLite
 
                 //context.SaveChanges();
 
-                context.Expenses.Add(new Expense
-                {
-                    Date = DateTime.Now,
-                    Amount = 350,
-                    Description = "Dinner",
-                    Category = context.Categories.FirstOrDefault()
-                });
+                //context.Expenses.Add(new Expense
+                //{
+                //    Date = DateTime.Now,
+                //    Amount = 350,
+                //    Description = "Dinner",
+                //    Category = context.Categories.FirstOrDefault()
+                //});
 
-                context.SaveChanges();
+                //context.SaveChanges();
 
 
                 var expenses = context.Expenses.ToList();
@@ -70,8 +40,6 @@ namespace _11_25_SQLite
 
 
             }
->>>>>>> 11-27
-
 
         }
     }

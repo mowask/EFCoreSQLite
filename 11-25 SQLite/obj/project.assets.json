@@ -534,6 +534,16 @@
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
+      },
+      "ExpensesTraker_Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ExpensesTraker_Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExpensesTraker_Library.dll": {}
+        }
       }
     }
   },
@@ -1267,10 +1277,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ExpensesTraker_Library/1.0.0": {
+      "type": "project",
+      "path": "../ExpensesTraker_Library/ExpensesTraker_Library.csproj",
+      "msbuildProject": "../ExpensesTraker_Library/ExpensesTraker_Library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "ExpensesTraker_Library >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.0"
     ]
   },
@@ -1280,11 +1296,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\EFCoreSQLite\\11-25 SQLite\\11-25 SQLite.csproj",
+      "projectUniqueName": "C:\\Users\\student\\source\\repos\\mowask\\EFCoreSQLite\\11-25 SQLite\\11-25 SQLite.csproj",
       "projectName": "11-25 SQLite",
-      "projectPath": "C:\\git\\EFCoreSQLite\\11-25 SQLite\\11-25 SQLite.csproj",
+      "projectPath": "C:\\Users\\student\\source\\repos\\mowask\\EFCoreSQLite\\11-25 SQLite\\11-25 SQLite.csproj",
       "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\EFCoreSQLite\\11-25 SQLite\\obj\\",
+      "outputPath": "C:\\Users\\student\\source\\repos\\mowask\\EFCoreSQLite\\11-25 SQLite\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1301,7 +1317,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\student\\source\\repos\\mowask\\EFCoreSQLite\\ExpensesTraker_Library\\ExpensesTraker_Library.csproj": {
+              "projectPath": "C:\\Users\\student\\source\\repos\\mowask\\EFCoreSQLite\\ExpensesTraker_Library\\ExpensesTraker_Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

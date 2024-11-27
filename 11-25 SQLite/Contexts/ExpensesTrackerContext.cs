@@ -1,4 +1,4 @@
-﻿using _11_25_SQLite.Madels;
+﻿using ExpensesTraker_Library.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11_25_SQLite.Contexts
+namespace ExpensesTraker_Library.Contexts
 {
     public class ExpensesTrackerContext    : DbContext
     {
