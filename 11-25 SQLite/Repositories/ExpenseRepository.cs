@@ -19,17 +19,20 @@ namespace ExpensesTraker_Library.Repositories
             _context = context;
         }
 
+
         public ObservableCollection<Category> GetAllCategoriesObservable()
         {
             _context.Categories.Load();
             return _context.Categories.Local.ToObservableCollection();
         }
 
+
         public void AddCategory(Category category)
         {
             _context.Categories.Add(category);
             _context.SaveChanges(true);
         }
+
 
         public void RemoveCategory(int categoryId)
         {
@@ -41,16 +44,20 @@ namespace ExpensesTraker_Library.Repositories
             }
         }
 
+
+        public IEnumerable<Category> GetAllCategories()
+        {
+            return _context.Categories.ToList();
+        }
+
+
         public void AddExpense(Expense expense)
         {
             _context.Expenses.Add(expense);
             _context.SaveChanges(true); 
         }
 
-        public IEnumerable<Category> GetAllCategories()
-        {
-            return _context.Categories.ToList();
-        }
+
 
         public void RemoveExpense(int expenseId)
         {
@@ -62,10 +69,19 @@ namespace ExpensesTraker_Library.Repositories
             }
         }       
 
+
          public IEnumerable<Expense> GetAllExpenses () 
          {
             return _context.Expenses.ToList();
          }
+
+
+        public ObservableCollection<Expense> GetAllExpensesObservable()
+        {
+            _context.Expenses.Include(e => e.Category).Load();
+            return _context.Expenses.Local.ToObservableCollection();
+        }
+
 
         public void DeleteCategory(int categoryId)
         {
@@ -77,11 +93,11 @@ namespace ExpensesTraker_Library.Repositories
             }
         }
 
+
         public void DeleteCategories (List<Category> category)
         {
             _context.Categories.RemoveRange(category);
             _context.SaveChanges(true);
-
         }
 
 

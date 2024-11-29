@@ -12,7 +12,7 @@
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
-                        <RowDefinition Height="*"/>                        
+                        <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -36,7 +36,7 @@
 
                 </Grid>
             </TabItem>
-            
+
 
             <TabItem Header="New Expense">
                 <Grid>
@@ -47,14 +47,14 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
-                    
+
                     <StackPanel Width="380" Orientation="Horizontal">
                         <TextBlock Text="Date: " Width="100" Margin="5"/>
                         <DatePicker x:Name="datePickerExpenseDate"
                                     IsTodayHighlighted="True"
                                     Width="250" Margin="5"/>
                     </StackPanel>
-                    
+
                     <StackPanel Width="380" Orientation="Horizontal" 
                                 Grid.Row="1">
                         <TextBlock  
@@ -72,10 +72,10 @@
 
                     <StackPanel Width="380" Orientation="Horizontal"
                                 Grid.Row="2">
-                    <TextBlock Text="Amount: " Width="100" Margin="5"/>
+                        <TextBlock Text="Amount: " Width="100" Margin="5"/>
                         <TextBox x:Name="textBoxExpenseAmount" Width="250" Margin="5"/>
                     </StackPanel>
-                    
+
                     <TextBox x:Name="textBoxExpenseDescription"
                              Grid.Row="3" Margin="5"
                              Width="380" HorizontalAlignment="Center"/>
@@ -84,6 +84,37 @@
                             Grid.Row="4" Margin="5"/>
                 </Grid>
             </TabItem>
+
+
+            <TabItem Header="Expenses Table">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="103*"/>
+                        <ColumnDefinition Width="94*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <DataGrid x:Name="dataGridExpenses" Grid.Row="1" Margin="7,5,7,5"
+                                  Width="380" AutoGenerateColumns="False" Grid.ColumnSpan="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn
+                                    Binding="{Binding Id}" Header="Id" Width="40"/>
+                            <DataGridTextColumn
+                                Binding="{Binding Date}" Header="Date"/>
+                            <DataGridTextColumn
+                                    Binding="{Binding Category}" Header="Category"/>
+                            <DataGridTextColumn
+                                    Binding="{Binding Amount}" Header="Amount"/>
+                            <DataGridTextColumn
+                                    Binding="{Binding Description}" Header="Description"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
         </TabControl>
     </Grid>
 </Window>
