@@ -8,4 +8,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\11-25 SQLite\11-25 SQLite.csproj" />
+    <ProjectReference Include="..\ExpensesTraker_Library\ExpensesTraker_Library.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -120,3 +120,5 @@ C:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\
 C:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.pdb
 C:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.genruntimeconfig.cache
 C:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\ref\11-25 SQLite.dll
+c:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\ExpensesTraker_Library.dll
+c:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\ExpensesTraker_Library.pdb

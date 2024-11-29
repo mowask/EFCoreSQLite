@@ -30,12 +30,12 @@ namespace ExpensesTraker_Library
                 //context.SaveChanges();
 
 
-                var expenses = context.Expenses.ToList();
-                foreach (var expense in expenses)
-                {
-                    Console.WriteLine($"Date: {expense.Date}, Amount: {expense.Amount}, " +
-                        $"Description: {expense.Description}, Category: {expense.Category.Name}");
-                }
+                //var expenses = context.Expenses.ToList();
+                //foreach (var expense in expenses)
+                //{
+                //    Console.WriteLine($"Date: {expense.Date}, Amount: {expense.Amount}, " +
+                //        $"Description: {expense.Description}, Category: {expense.Category.Name}");
+                //}
 
 
 
