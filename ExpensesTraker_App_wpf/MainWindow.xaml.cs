@@ -29,7 +29,24 @@ namespace ExpensesTraker_App_wpf
             dataGridCategories.ItemsSource = _repository.GetAllCategoriesObservable();
 
             buttonAddCategory.Click += ButtonAddCategory_Click;
+            buttonDeleteCategories.Click += ButtonDeleteCategories_Click;
         }
+
+        private void ButtonDeleteCategories_Click(object sender, RoutedEventArgs e)
+        {
+            if (dataGridCategories.SelectedItem != null)
+            {
+                var categoriesToDelete = new List<Category>();
+                foreach (var item in dataGridCategories.SelectedItems)
+                {
+                    categoriesToDelete.Add(item as Category);
+                }
+                _repository.DeleteCategories(categoriesToDelete);
+            }
+            else 
+                ShowError("No Category Selected");
+        }
+
 
         private void ButtonAddCategory_Click(object sender, RoutedEventArgs e)
         {
@@ -41,12 +58,17 @@ namespace ExpensesTraker_App_wpf
                     Name = textBoxCategoryName.Text,
                 });
             }
-            //else
-            //{
-            //    MessageBox.Show("Category Name can't be empty", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
+            else
+            {
+                ShowError("Category Name can;t ba empty!");
+            }
         }
 
+
+        private void ShowError (string message )
+        {
+            MessageBox.Show(message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
 
     }
 }

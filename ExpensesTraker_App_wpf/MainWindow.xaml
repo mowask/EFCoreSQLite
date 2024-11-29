@@ -16,8 +16,10 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <TextBox x:Name="textBoxCategoryName"  Margin="5" Width="250"/>
+                        <TextBox x:Name="textBoxCategoryName"  Margin="5" Width="130"/>
                         <Button x:Name="buttonAddCategory" Margin="5" Content="Add Category"/>
+                        <Button x:Name="buttonDeleteCategories" Margin="5" 
+                                Content="Delete Selected Categories"/>
                     </StackPanel>
 
                     <DataGrid x:Name="dataGridCategories"
@@ -32,6 +34,54 @@
                         </DataGrid.Columns>
                     </DataGrid>
 
+                </Grid>
+            </TabItem>
+            
+
+            <TabItem Header="New Expense">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <StackPanel Width="380" Orientation="Horizontal">
+                        <TextBlock Text="Date: " Width="100" Margin="5"/>
+                        <DatePicker x:Name="datePickerExpenseDate"
+                                    IsTodayHighlighted="True"
+                                    Width="250" Margin="5"/>
+                    </StackPanel>
+                    
+                    <StackPanel Width="380" Orientation="Horizontal" 
+                                Grid.Row="1">
+                        <TextBlock  
+                                   Text="Category: " 
+                                   Width="100" Margin="5"/>
+                        <ComboBox x:Name="comboBoxExpenseCategory"
+                                  Width="250" Margin="5">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <StackPanel Width="380" Orientation="Horizontal"
+                                Grid.Row="2">
+                    <TextBlock Text="Amount: " Width="100" Margin="5"/>
+                        <TextBox x:Name="textBoxExpenseAmount" Width="250" Margin="5"/>
+                    </StackPanel>
+                    
+                    <TextBox x:Name="textBoxExpenseDescription"
+                             Grid.Row="3" Margin="5"
+                             Width="380" HorizontalAlignment="Center"/>
+
+                    <Button x:Name="buttonAddExpense" Content="Add new Expense" 
+                            Grid.Row="4" Margin="5"/>
                 </Grid>
             </TabItem>
         </TabControl>
