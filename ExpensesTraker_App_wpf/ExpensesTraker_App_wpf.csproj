@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetProjects.WpfToolkit.DataVisualization" Version="6.1.94" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\11-25 SQLite\11-25 SQLite.csproj" />
     <ProjectReference Include="..\ExpensesTraker_Library\ExpensesTraker_Library.csproj" />
   </ItemGroup>

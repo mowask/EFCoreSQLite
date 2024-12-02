@@ -1,4 +1,5 @@
-﻿using ExpensesTraker_Library.Contexts;
+﻿using _11_25_SQLite.Models;
+using ExpensesTraker_Library.Contexts;
 using ExpensesTraker_Library.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -101,8 +102,20 @@ namespace ExpensesTraker_Library.Repositories
         }
 
 
-      
+        public IEnumerable<Expense> GetExpensesByMonthYear(int month, int year)
+        {
+            return _context.Expenses.Include(e => e.Category).Where(e => e.Date.Month == month && e.Date.Year == year).ToList();
+        }
 
+
+        public IEnumerable<AmountByDayOfWeek> GetAverageExpensesByDayOfWeek()
+        {
+           return _context.Expenses.
+                GroupBy(e => e.Date.DayOfWeek).
+                Select(g => new AmountByDayOfWeek (g.Key, g.Average(e => (double) e.Amount))).ToList();
+        }
+      
+        
 
     }
 }
