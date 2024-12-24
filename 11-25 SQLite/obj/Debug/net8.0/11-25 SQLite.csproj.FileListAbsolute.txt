@@ -122,3 +122,68 @@ C:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\
 C:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\ref\11-25 SQLite.dll
 c:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\ExpensesTraker_Library.dll
 c:\Users\student\source\repos\mowask\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\ExpensesTraker_Library.pdb
+c:\git\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\ExpensesTraker_Library.dll
+c:\git\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\ExpensesTraker_Library.pdb
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\11-25 SQLite.exe
+F:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\11-25 SQLite.deps.json
+F:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\11-25 SQLite.runtimeconfig.json
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\11-25 SQLite.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\11-25 SQLite.pdb
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\System.IO.Pipelines.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\System.Text.Json.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-mips64\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-s390x\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-x64\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\linux-x86\native\libe_sqlite3.so
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\ExpensesTraker_Library.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\bin\Debug\net8.0\ExpensesTraker_Library.pdb
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.csproj.AssemblyReference.cache
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.GeneratedMSBuildEditorConfig.editorconfig
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.AssemblyInfoInputs.cache
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.AssemblyInfo.cs
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.csproj.CoreCompileInputs.cache
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.sourcelink.json
+F:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQ.C6A95F0C.Up2Date
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\refint\11-25 SQLite.dll
+f:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.pdb
+F:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\11-25 SQLite.genruntimeconfig.cache
+F:\TOP\С#\C#_HomeWork\EFCoreSQLite\11-25 SQLite\obj\Debug\net8.0\ref\11-25 SQLite.dll

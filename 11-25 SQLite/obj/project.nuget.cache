@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NXQdAhmdhV0=",
+  "dgSpecHash": "g8iwf8eO6/I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Царь-Бог Алексей\\source\\repos\\mowask\\EFCoreSQLite\\11-25 SQLite\\11-25 SQLite.csproj",
+  "projectFilePath": "F:\\TOP\\С#\\C#_HomeWork\\EFCoreSQLite\\11-25 SQLite\\11-25 SQLite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Царь-Бог Алексей\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.0\\microsoft.data.sqlite.core.9.0.0.nupkg.sha512",
     "C:\\Users\\Царь-Бог Алексей\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
