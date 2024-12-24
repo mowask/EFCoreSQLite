@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ExpensesTraker_App_wpf"
         
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
+        Title="MainWindow" Height="600" Width="420">
     <Grid>
         <TabControl>
             <TabItem Header="Categories">
@@ -37,10 +37,14 @@
 
                 </Grid>
             </TabItem>
-            
+
 
             <TabItem Header="New Expense">
                 <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="187*"/>
+                        <ColumnDefinition Width="207*"/>
+                    </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="auto"/>
@@ -49,7 +53,7 @@
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
 
-                    <StackPanel Width="380" Orientation="Horizontal">
+                    <StackPanel Width="380" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="7,0,7,0">
                         <TextBlock Text="Date: " Width="100" Margin="5"/>
                         <DatePicker x:Name="datePickerExpenseDate"
                                     IsTodayHighlighted="True"
@@ -57,7 +61,7 @@
                     </StackPanel>
 
                     <StackPanel Width="380" Orientation="Horizontal" 
-                                Grid.Row="1">
+                                Grid.Row="1" Grid.ColumnSpan="2" Margin="7,0,7,28" Grid.RowSpan="2">
                         <TextBlock  
                                    Text="Category: " 
                                    Width="100" Margin="5"/>
@@ -72,17 +76,17 @@
                     </StackPanel>
 
                     <StackPanel Width="380" Orientation="Horizontal"
-                                Grid.Row="2">
+                                Grid.Row="2" Grid.ColumnSpan="2" Margin="7,0,7,432" Grid.RowSpan="2">
                         <TextBlock Text="Amount: " Width="100" Margin="5"/>
                         <TextBox x:Name="textBoxExpenseAmount" Width="250" Margin="5"/>
                     </StackPanel>
 
                     <TextBox x:Name="textBoxExpenseDescription"
-                             Grid.Row="3" Margin="5"
-                             Width="380" HorizontalAlignment="Center"/>
+                             Grid.Row="3" Margin="7,5,0,5"
+                             Width="380" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
 
                     <Button x:Name="buttonAddExpense" Content="Add new Expense" 
-                            Grid.Row="4" Margin="5"/>
+                            Grid.Row="4" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
 
@@ -116,26 +120,111 @@
                 </Grid>
             </TabItem>
 
-            <TabItem Header="Day Of Week">
-                <Grid>                    
+
+            <TabItem Header="ByCategory">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="103*"/>
+                        <ColumnDefinition Width="94*"/>
+                    </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
-                    <Button x:Name="ButtonUpdateDayOfWeek" Margin="10" 
-                            Content="ButtonUpdateDayOfWeek" HorizontalAlignment="Center"/>
-                    <DataGrid x:Name="dataGridDayOfWeek" Grid.Row="1"
-                              AutoGenerateColumns="False">
+
+                    <StackPanel Width="380" Orientation="Horizontal" 
+                            Grid.Row="0" Grid.ColumnSpan="2" Margin="7">
+                        <TextBlock
+                            Text="Category: " 
+                            Width="100" Margin="7"/>
+                        <ComboBox x:Name="comboBoxByCategory"
+                            Width="250" Margin="15 5">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <DataGrid x:Name="dataGridByCategory" Grid.Row="1" Margin="7,5,7,5"
+                      Width="380" AutoGenerateColumns="False" Grid.ColumnSpan="2">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Day"
-                                                Binding="{Binding DayOfWeek}"/>
-                            <DataGridTextColumn Header="Amount"
-                                                Binding="{Binding Amount}"/>                            
+                            <DataGridTextColumn
+                        Binding="{Binding Id}" Header="Id" Width="40"/>
+                            <DataGridTextColumn
+                    Binding="{Binding Date}" Header="Date"/>
+                            <DataGridTextColumn                        
+                        Binding="{Binding Amount}" Header="Amount"/>
+                            <DataGridTextColumn
+                        Binding="{Binding Description}" Header="Description"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
             </TabItem>
-                    
+
+
+            <TabItem Header="ByDate">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="206*"/>
+                        <ColumnDefinition Width="121*"/>
+                        <ColumnDefinition Width="67*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Width="380" Orientation="Horizontal" 
+                             Grid.Row="0" Grid.ColumnSpan="3" Margin="7,7,7,0">
+                        <TextBlock
+                            Text="Year: " 
+                            Width="50" Margin="7"/>
+                        <ComboBox x:Name="comboBoxByYear"
+                             Width="300" Margin="15 5">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Date}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>                       
+                    </StackPanel>
+
+                    <StackPanel Width="380" Orientation="Horizontal" 
+                            Grid.Row="1" Grid.ColumnSpan="3" Margin="7,0,7,7">
+                        <TextBlock
+                            Text="Month: " 
+                            Width="50" Margin="7"/>
+                        <ComboBox x:Name="comboBoxByMonth"
+                            Width="300" Margin="15 5">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Date}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <DataGrid x:Name="dataGridByDate" Grid.Row="2" Margin="7,5,7,5"
+                                Width="380" AutoGenerateColumns="False" Grid.ColumnSpan="3">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn
+                                Binding="{Binding Id}" Header="Id" Width="40"/>
+                            <DataGridTextColumn
+                                Binding="{Binding Date}" Header="Date"/>
+                            <DataGridTextColumn
+                                Binding="{Binding Category}" Header="Category"/>
+                            <DataGridTextColumn                        
+                                Binding="{Binding Amount}" Header="Amount"/>
+                            <DataGridTextColumn
+                                Binding="{Binding Description}" Header="Description"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
 
         </TabControl>
     </Grid>

@@ -31,20 +31,12 @@ namespace ExpensesTraker_App_wpf
             dataGridCategories.ItemsSource = _repository.GetAllCategoriesObservable();
             dataGridExpenses.ItemsSource = _repository.GetAllExpensesObservable();
             comboBoxExpenseCategory.ItemsSource = _repository.GetAllCategoriesObservable();
-            dataGridDayOfWeek.ItemsSource = _repository.GetAllCategoriesObservable();
 
             buttonAddCategory.Click += ButtonAddCategory_Click;
             buttonDeleteCategories.Click += ButtonDeleteCategories_Click;
             buttonAddExpense.Click += ButtonAddExpense_Click;
-            ButtonUpdateDayOfWeek.Click += ButtonUpdateDayOfWeek_Click;
-
 
            
-        }
-
-        private void ButtonUpdateDayOfWeek_Click(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         private void ButtonAddExpense_Click(object sender, RoutedEventArgs e)
